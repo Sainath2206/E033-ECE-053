@@ -75,4 +75,3 @@ date,chamber_id,quote_id,test_code,test_hours,setup_hours,day_hours_used
 2026-10-19,CH-03,QT-023,T-09,3.0,1.0,4.0
 2026-10-19,CH-03,QT-023,T-11,2.5,0.0,6.5
 2026-10-20,CH-03,QT-023,T-14,2.5,1.0,3.5
-2026-11-02,CH-03,QT-026,T-06,1.5,1.0,2.5

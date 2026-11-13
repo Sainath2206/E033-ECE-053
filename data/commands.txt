@@ -1,8 +1,13 @@
+
 # ECE-053 command file - catalogue, chambers and holidays first, then dated QUOTE / CONFIRM / TEST_RESULT commands
-# QUOTE|date|quote_id|client|product|test_codes|eut_count|rush(Y/N)|retest_of   CONFIRM|date|quote_id   TEST_RESULT|date|quote_id|test_code|PASS/FAIL
+# QUOTE|date|quote_id|client|product|test_codes (semicolon-separated)|eut_count|rush(Y/N)|retest_of
+# CONFIRM|date|quote_id
+# TEST_RESULT|date|quote_id|test_code|PASS/FAIL
+
 LOAD_CATALOGUE|test_catalogue.csv
 LOAD_CHAMBERS|chambers.csv
 LOAD_HOLIDAYS|holidays.csv
+
 QUOTE|2026-09-07|QT-001|Bharat Rail Electronics|Coach lighting inverter|T-05;T-06;T-07;T-08;T-09;T-11|1|N|NONE
 QUOTE|2026-09-07|QT-002|Deccan Lighting|Street-light controller|T-04;T-05;T-08;T-09;T-11;T-12|3|N|NONE
 QUOTE|2026-09-08|QT-003|Tejas Medical Devices|Infusion pump controller|T-05;T-06;T-08|3|N|NONE
@@ -53,7 +58,6 @@ QUOTE|2026-10-10|QT-025|Bharat Rail Electronics|Coach lighting inverter|T-08|1|N
 CONFIRM|2026-10-10|QT-024
 CONFIRM|2026-10-12|QT-007
 CONFIRM|2026-10-15|QT-023
+
 PRINT_QUOTATIONS
 PRINT_CALENDAR|2026-09-07|2026-10-20
-QUOTE|2026-10-01|QT-026|Test Client|Test Product|T-06|1|N|NONE
-CONFIRM|2026-10-31|QT-026
