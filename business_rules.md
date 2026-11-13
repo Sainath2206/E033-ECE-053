@@ -21,7 +21,7 @@ BR-08: Add Rs 8,000 report fee for normal jobs.
 
 BR-09: Retests within 30 days of the failed test's booked day receive 50% test cost and no report fee.
 
-BR-10: Apply 5% discount for 3–4 tests and 10% for 5+ tests.
+BR-10: Apply 5% discount for 3-4 tests and 10% for 5+ tests.
 
 BR-11: Calculate discounts on gross test costs.
 
