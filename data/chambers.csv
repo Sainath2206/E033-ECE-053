@@ -1,0 +1,4 @@
+chamber_id,chamber_name,chamber_type,hours_per_day
+CH-01,10 m semi-anechoic chamber,SAC,8.0
+CH-02,3 m semi-anechoic chamber,SAC,8.0
+CH-03,Shielded room,SHIELDED,8.0

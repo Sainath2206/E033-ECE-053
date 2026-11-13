@@ -1,0 +1,15 @@
+test_code,test_name,standard,chamber_type,base_hours,rate_per_hour_rs
+T-01,Radiated emissions 30 MHz-1 GHz,CISPR 32,SAC,3.0,6500.00
+T-02,Radiated emissions 1-6 GHz,CISPR 32,SAC,2.5,6500.00
+T-03,Radiated immunity 80 MHz-6 GHz,IEC 61000-4-3,SAC,3.5,7000.00
+T-04,Vehicle component radiated emissions,CISPR 25,SAC,3.5,7500.00
+T-05,Conducted emissions mains port,CISPR 32,SHIELDED,1.5,4500.00
+T-06,Electrostatic discharge,IEC 61000-4-2,SHIELDED,1.5,4000.00
+T-07,Electrical fast transients,IEC 61000-4-4,SHIELDED,1.0,4000.00
+T-08,Surge immunity,IEC 61000-4-5,SHIELDED,1.5,4500.00
+T-09,Conducted RF immunity,IEC 61000-4-6,SHIELDED,2.0,4500.00
+T-10,Power-frequency magnetic field,IEC 61000-4-8,SHIELDED,1.0,3500.00
+T-11,Voltage dips and interruptions,IEC 61000-4-11,SHIELDED,1.5,3500.00
+T-12,Harmonic current emissions,IEC 61000-3-2,SHIELDED,1.0,3500.00
+T-13,Voltage fluctuation and flicker,IEC 61000-3-3,SHIELDED,1.0,3500.00
+T-14,Telecom port conducted emissions,CISPR 32,SHIELDED,1.5,4500.00

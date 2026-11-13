@@ -1,0 +1,57 @@
+# ECE-053 command file - catalogue, chambers and holidays first, then dated QUOTE / CONFIRM / TEST_RESULT commands
+# QUOTE|date|quote_id|client|product|test_codes|eut_count|rush(Y/N)|retest_of   CONFIRM|date|quote_id   TEST_RESULT|date|quote_id|test_code|PASS/FAIL
+LOAD_CATALOGUE|test_catalogue.csv
+LOAD_CHAMBERS|chambers.csv
+LOAD_HOLIDAYS|holidays.csv
+QUOTE|2026-09-07|QT-001|Bharat Rail Electronics|Coach lighting inverter|T-05;T-06;T-07;T-08;T-09;T-11|1|N|NONE
+QUOTE|2026-09-07|QT-002|Deccan Lighting|Street-light controller|T-04;T-05;T-08;T-09;T-11;T-12|3|N|NONE
+QUOTE|2026-09-08|QT-003|Tejas Medical Devices|Infusion pump controller|T-05;T-06;T-08|3|N|NONE
+CONFIRM|2026-09-08|QT-001
+QUOTE|2026-09-09|QT-004|Deccan Lighting|Street-light controller|T-01;T-02;T-07;T-10|2|N|NONE
+QUOTE|2026-09-09|QT-005|Suvarna EV Tech|EV charger control unit|T-02;T-07;T-08;T-09;T-14|4|N|NONE
+TEST_RESULT|2026-09-09|QT-001|T-06|FAIL
+TEST_RESULT|2026-09-09|QT-001|T-08|FAIL
+TEST_RESULT|2026-09-09|QT-001|T-05|PASS
+TEST_RESULT|2026-09-09|QT-001|T-07|PASS
+TEST_RESULT|2026-09-09|QT-001|T-11|PASS
+QUOTE|2026-09-10|QT-006|Hampi Audio|Bluetooth soundbar|T-03|4|N|NONE
+TEST_RESULT|2026-09-10|QT-001|T-09|PASS
+QUOTE|2026-09-11|QT-007|Deccan Lighting|Street-light controller|T-12;T-13|1|N|NONE
+CONFIRM|2026-09-11|QT-002
+CONFIRM|2026-09-11|QT-003
+CONFIRM|2026-09-12|QT-006
+QUOTE|2026-09-14|QT-008|Bharat Rail Electronics|Coach lighting inverter|T-05;T-06;T-07;T-08;T-09;T-10;T-11;T-12;T-13;T-14|4|N|NONE
+QUOTE|2026-09-15|QT-009|Deccan Lighting|Street-light controller|T-01;T-04;T-07;T-14|4|N|NONE
+QUOTE|2026-09-16|QT-010|Kaveri Smart Meters|Single-phase smart energy meter|T-06|1|Y|NONE
+QUOTE|2026-09-16|QT-011|Kaveri Smart Meters|Single-phase smart energy meter|T-09;T-11|4|Y|NONE
+CONFIRM|2026-09-17|QT-008
+CONFIRM|2026-09-17|QT-010
+CONFIRM|2026-09-17|QT-011
+CONFIRM|2026-09-18|QT-005
+QUOTE|2026-09-21|QT-012|Bharat Rail Electronics|Coach lighting inverter|T-08|1|N|QT-001
+QUOTE|2026-09-22|QT-013|Kaveri Smart Meters|Single-phase smart energy meter|T-05;T-07;T-08;T-09;T-11;T-14|1|N|NONE
+QUOTE|2026-09-22|QT-014|Arka Solar|Solar charge controller|T-01;T-03;T-05;T-13|3|N|NONE
+QUOTE|2026-09-23|QT-015|Tejas Medical Devices|Infusion pump controller|T-04;T-05;T-09;T-10;T-12|1|N|NONE
+CONFIRM|2026-09-23|QT-012
+QUOTE|2026-09-24|QT-016|Vayu Power Systems Pvt Ltd|LED driver 40 W|T-01;T-05;T-08;T-09;T-11|3|N|NONE
+CONFIRM|2026-09-25|QT-009
+CONFIRM|2026-09-25|QT-013
+QUOTE|2026-09-27|QT-017|Arka Solar|Solar charge controller|T-03;T-08;T-09;T-13;T-14|4|N|NONE
+QUOTE|2026-09-27|QT-018|Arka Solar|Solar charge controller|T-06;T-10;T-12;T-13|2|N|NONE
+QUOTE|2026-09-29|QT-019|Bharat Rail Electronics|Coach lighting inverter|T-07;T-08;T-09;T-10;T-11;T-12|1|N|NONE
+CONFIRM|2026-10-01|QT-015
+QUOTE|2026-10-02|QT-020|Deccan Lighting|Street-light controller|T-08;T-09;T-11;T-12;T-13;T-14|3|N|NONE
+CONFIRM|2026-10-02|QT-016
+QUOTE|2026-10-03|QT-021|Bharat Rail Electronics|Coach lighting inverter|T-03;T-07;T-08;T-11;T-12|4|N|NONE
+QUOTE|2026-10-04|QT-022|Sahyadri Telecom|Fibre ONT router|T-13;T-14|3|N|NONE
+QUOTE|2026-10-06|QT-023|Kaveri Smart Meters|Single-phase smart energy meter|T-03;T-05;T-06;T-09;T-11;T-14|2|N|NONE
+CONFIRM|2026-10-06|QT-021
+CONFIRM|2026-10-07|QT-017
+QUOTE|2026-10-09|QT-024|Bharat Rail Electronics|Coach lighting inverter|T-06|1|N|QT-001
+CONFIRM|2026-10-09|QT-004
+QUOTE|2026-10-10|QT-025|Bharat Rail Electronics|Coach lighting inverter|T-08|1|N|QT-001
+CONFIRM|2026-10-10|QT-024
+CONFIRM|2026-10-12|QT-007
+CONFIRM|2026-10-15|QT-023
+PRINT_QUOTATIONS
+PRINT_CALENDAR|2026-09-07|2026-10-20
